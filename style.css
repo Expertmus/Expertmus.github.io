@@ -46,7 +46,7 @@ header{
 }
 
 .promo{
-    background: url('img/bg/1.1_original\ —\ копия.webp') center / cover no-repeat fixed;
+    background: url('img/bg/1.1_original\ —\ копия.webp') center / cover no-repeat;
     height: 100vh;
     color: var(--text-color); 
     display: flex;
