@@ -51,7 +51,7 @@ header{
     color: var(--text-color); 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;    
 }
 
 
@@ -391,8 +391,9 @@ header{
         padding: 50px 0 0 0;
     }
     .services{
-        height: auto;
-        background-attachment: fixed;
+
+        
+        /* background-attachment: fixed; */
     }
     .services__wrapper{
         margin: 0 auto;
