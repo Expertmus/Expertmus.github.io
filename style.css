@@ -151,7 +151,10 @@ header{
 }
 
 .promo{
-    background: url('img/bg/1_original.webp') center / cover no-repeat fixed;
+    background: url('img/bg/1_original.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
     color: var(--text-color); 
     display: flex;
@@ -494,11 +497,6 @@ header{
     }
     .reason__item:nth-child(3n){
         padding: 50px 0 0 0;
-    }
-    .services{
-
-        
-        /* background-attachment: fixed; */
     }
     .services__wrapper{
         margin: 0 auto;
