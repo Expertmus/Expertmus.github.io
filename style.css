@@ -153,6 +153,7 @@ header{
 .promo{
     background: url('img/bg/1_original.webp');
     background-size: cover;
+    -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
