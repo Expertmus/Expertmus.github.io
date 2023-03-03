@@ -46,7 +46,7 @@ header{
 }
 
 .promo{
-    background: url('img/bg/1.1_original\ —\ копия.webp') center / cover no-repeat;
+    background: url('img/bg/1.1_original\ —\ копия.webp') center / cover no-repeat fixed;
     height: 100vh;
     color: var(--text-color); 
     display: flex;
@@ -202,7 +202,7 @@ header{
     width: 25%
 }
 .services{
-    background: url('img/bg/serv_1.1 — копия.webp') center  center/cover no-repeat;
+    background: url('img/bg/serv_1.1 — копия.webp') center  center/cover no-repeat fixed;
     color: var(--text-color);
     padding: 10vh 0;
 }
@@ -567,11 +567,11 @@ header{
     right: 0;
 }
 
-.scroll-item{
+/* .scroll-item{
     opacity: 0;
     transform: translateY(50px);
     transition: .5s all;
-}
+} */
 .animation-class{
     opacity: 1;
     transform: translateY(0);
