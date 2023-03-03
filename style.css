@@ -151,7 +151,7 @@ header{
 }
 
 .promo{
-    background: url('img/bg/1.1_original\ —\ копия.webp') center / cover no-repeat ;
+    background: url('img/bg/1_original.webp') center / cover no-repeat fixed;
     height: 100vh;
     color: var(--text-color); 
     display: flex;
@@ -307,7 +307,7 @@ header{
     width: 25%
 }
 .services{
-    background: url('img/bg/serv_1.1 — копия.webp') center  center/cover no-repeat;
+    background: url('img/bg/serv_1.1 — копия.webp') center  center/cover no-repeat fixed;
     color: var(--text-color);
     padding: 10vh 0;
 }
@@ -513,6 +513,9 @@ header{
 
 }
 @media screen and (max-width: 991px){
+    .promo{
+        background: url('img/bg/1_original_1920.webp') center / cover no-repeat fixed;
+    }
     .hamburger-lines {
         height: 15px;
         width: 20px;
