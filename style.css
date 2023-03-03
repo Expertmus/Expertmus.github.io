@@ -1,3 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&family=League+Spartan:wght@300;400&family=Nunito:wght@300;500;700;900&family=Poppins:wght@300;500&family=Raleway:wght@100;400;600&display=swap');
 
 /* Reset and base styles  */
@@ -10,7 +24,8 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 :focus,
@@ -79,7 +94,8 @@ input::-ms-clear {
 
 button, input[type="submit"] {
     display: inline-block;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     background-color: transparent;
     background: none;
     cursor: pointer;
@@ -146,30 +162,47 @@ header{
     width: 100%;
 }
 .header__wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .promo{
     background: url('img/bg/1_original.webp');
     background-size: cover;
-    -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
     color: var(--text-color); 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    flex-direction: column;
-    justify-content: center;    
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;    
 }
 
 
 .hamburger-lines {
     height: 25px;
     width: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     display: none;
 }
 .hamburger-lines__nav{
@@ -184,24 +217,46 @@ header{
     background: var(--text-color);
 }
 .hamburger-lines .line1 {
-    transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
     transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 .hamburger-lines .line2 {
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 .hamburger-lines .line3 {
-    transform-origin: 0% 100%;
+    -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
     transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 .line1-active{
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 .line2-active {
-    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
 }
 .line3-active {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 .call{
     font-size: var(--main-text);
@@ -214,6 +269,8 @@ header{
 .header__call_phone{
     color: var(--text-color);
     text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     line-height: 2em;
     padding-left: 22.5%;
@@ -225,8 +282,12 @@ header{
 
 .nav__menu{
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
     width: 35vw;
     margin: 0;
@@ -236,6 +297,8 @@ header{
     color: var(--text-color);
     font-size: var(--main-text);
     font-weight: var(--main-text-weight);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     text-decoration: none;
 }
@@ -259,11 +322,14 @@ header{
     font-size: var(--main-text);
     font-weight: var(--main-text-weight);
     letter-spacing: 5px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
 }
 .promo_btn:hover{
-    box-shadow: 5px 5px 25px #a74934;
+    -webkit-box-shadow: 5px 5px 25px #a74934;
+            box-shadow: 5px 5px 25px #a74934;
 }
 .reason{
     background-color: #fafafa;
@@ -271,9 +337,14 @@ header{
     
 }
 .reason__wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .reason__item{
     max-width: 300px;
@@ -312,6 +383,9 @@ header{
 }
 .services{
     background: url('img/bg/serv_1.1 — копия.webp') center  center/cover no-repeat fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--text-color);
     padding: 10vh 0;
 }
@@ -323,9 +397,14 @@ header{
     margin: 0;
 }
 .services__wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .services__item{
     max-width: 400px;
@@ -369,16 +448,23 @@ header{
     font-size: var(--main-text);
     font-weight: var(--main-text-weight);
     letter-spacing: 5px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
 }
 .footer__btn:hover{
-    box-shadow: 5px 5px 25px #a74934;
+    -webkit-box-shadow: 5px 5px 25px #a74934;
+            box-shadow: 5px 5px 25px #a74934;
 }
 .footer__wrapper{
     margin:  0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     max-width: 450px;
     list-style-type: none;
     padding: 0;
@@ -386,10 +472,13 @@ header{
 .footer__img{
     width: 25%;
     margin: 50px 0 0 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 .footer__img:hover{
-    filter: drop-shadow(10px 10px 3px rgba(167, 73, 52, 0.95));
+    -webkit-filter: drop-shadow(10px 10px 3px rgba(167, 73, 52, 0.95));
+            filter: drop-shadow(10px 10px 3px rgba(167, 73, 52, 0.95));
 }
 
 .modal {
@@ -407,7 +496,9 @@ header{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .modal__content {
@@ -416,8 +507,13 @@ header{
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .modal__close {
@@ -444,7 +540,8 @@ header{
     max-width: 280px;
     height: 55px;
     background: #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, .3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, .3);
     border: none;
     font-size: var(--main-text);
     font-weight: var(--main-text-weight);
@@ -470,6 +567,8 @@ header{
 
 @media screen and (max-width: 1350px){
     .hamburger-lines{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .nav__menu{
@@ -478,16 +577,28 @@ header{
         right: -100%;
         width: 300px;
         height: 100vh;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
         transition: all 0.5s;
         background-color: rgba(0,0,0,.8);
         z-index: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         text-align: center;
     }
     .reason__wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .reason__title{
         margin: 0;
@@ -677,10 +788,16 @@ header{
 
 .scroll-item{
     opacity: 0;
-    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+            transform: translateY(50px);
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
     transition: .5s all;
 }
 .animation-class{
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
 }
