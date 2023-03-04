@@ -153,11 +153,15 @@ header{
 .promo{
     height: 100vh;
     color: var(--text-color); 
+    background-image: url('img/bg/1_original.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;    
 }
-.promo:before {
+/* .promo:before {
     content: '';
     background-image: url('img/bg/1_original.webp');
     background-size: cover;
@@ -168,7 +172,7 @@ header{
     top: 0;
     bottom: 0;
     z-index: -1;
-}
+} */
 
 .hamburger-lines {
     height: 25px;
