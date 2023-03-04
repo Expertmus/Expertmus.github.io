@@ -521,7 +521,8 @@ header{
         background-size: cover;
         -webkit-background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
+        
     }
     .hamburger-lines {
         height: 15px;
