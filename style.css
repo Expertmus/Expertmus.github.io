@@ -151,11 +151,6 @@ header{
 }
 
 .promo{
-    /* background: url('img/bg/1_original.webp');
-    background-size: cover;
-    /* -webkit-background-size: cover; */
-    background-repeat: no-repeat;
-   
     height: 100vh;
     color: var(--text-color); 
     display: flex;
@@ -527,13 +522,8 @@ header{
 
 }
 @media screen and (max-width: 991px){
-    .promo{
-        background: url('img/bg/1_original_1920.webp');
-        background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        
+    .promo:before {
+        background-image: url('img/bg/1_original_1920.webp');
     }
     .hamburger-lines {
         height: 15px;
