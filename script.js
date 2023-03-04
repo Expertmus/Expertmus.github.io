@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if(windowCenter >= scrollOffset){
                 el.classList.add('animation-class')
             } 
+            else{
+                el.classList.remove('animation-class')
+            }
         })
     }
     scrollAnimation()
@@ -89,6 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.innerHTML = `
             
                 <div class="modal__dialog">
+                
                     <div class="modal__content">
                         <div class="modal__title">Спасибо за оставленную заявку, я свяжусь с вами</div>
                     </div>
