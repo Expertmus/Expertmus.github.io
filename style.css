@@ -512,7 +512,7 @@ header{
 }
 @media screen and (max-width: 991px){
     .promo{
-        background: url('img/bg/1_original_1920.webp') center / cover no-repeat fixed;
+        background: url('img/bg/1_original.jpg') center / cover no-repeat fixed;
     }
     .hamburger-lines {
         height: 15px;
