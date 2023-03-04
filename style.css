@@ -151,18 +151,29 @@ header{
 }
 
 .promo{
-    background: url('img/bg/1_original.webp');
+    /* background: url('img/bg/1_original.webp');
     background-size: cover;
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover; */
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+   
     height: 100vh;
     color: var(--text-color); 
     display: flex;
     flex-direction: column;
     justify-content: center;    
 }
-
+.promo:before {
+    content: '';
+    background-image: url('img/bg/1_original.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
 
 .hamburger-lines {
     height: 25px;
@@ -521,7 +532,7 @@ header{
         background-size: cover;
         -webkit-background-size: cover;
         background-repeat: no-repeat;
-        /* background-attachment: fixed; */
+        background-attachment: fixed;
         
     }
     .hamburger-lines {
