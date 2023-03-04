@@ -153,15 +153,11 @@ header{
 .promo{
     height: 100vh;
     color: var(--text-color); 
-    background-image: url('img/bg/1_original.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;    
 }
-/* .promo:before {
+.promo:before {
     content: '';
     background-image: url('img/bg/1_original.webp');
     background-size: cover;
@@ -172,7 +168,7 @@ header{
     top: 0;
     bottom: 0;
     z-index: -1;
-} */
+}
 
 .hamburger-lines {
     height: 25px;
@@ -321,11 +317,10 @@ header{
     width: 25%
 }
 .services{
-    background: url('img/bg/serv_1.1 — копия.webp') center  center/cover no-repeat fixed;
+    background: url('img/bg/serv_1.webp');
     background-size: cover;
-    -webkit-background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center;
     color: var(--text-color);
     padding: 10vh 0;
 }
@@ -369,6 +364,7 @@ header{
     padding: 10vh 0;
     background-color: #fafafa;
 }
+
 .footer__title{
     font-weight: var(--h2-weight);
     font-size: var(--h2-size);
@@ -449,7 +445,7 @@ header{
     font-weight: var(--h2-weight);
     font-size: var(--main-text);
     max-width: 350px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .modal__input {
@@ -528,6 +524,7 @@ header{
 @media screen and (max-width: 991px){
     .promo:before {
         background-image: url('img/bg/1_original_1920.webp');
+        position: absolute;
     }
     .hamburger-lines {
         height: 15px;
@@ -600,6 +597,7 @@ header{
     }
     .modal__title {
         font-size: var(--tablet-main-text);
+        min-width: 260px;
     }
     .modal__input {
         font-size: var(--tablet-main-text);
@@ -662,6 +660,7 @@ header{
     }
     .modal__title {
         font-size: var(--mobail-main-text);
+        min-width: 210px;
     }
     .modal__input {
         font-size: var(--mobail-main-text);
@@ -681,7 +680,11 @@ header{
         display: none;
     }
 }
-
+@media screen and (max-height: 370px){
+    .call{
+        font-size: 15px;
+    }
+}
 .show{
     display: block
 }
